@@ -10,22 +10,25 @@
 
     @*A post method will send data to the server without placing it in the url*@
     <form method="post">
-        @*Create inputs for all of the properties*@
-        <label>Full Name</label>
-        <input type="text" name="full_name" />
-        <br />
+        <div class="form-group">
+            <label>Full Name</label>
+            <input class="form-control" type="text" name="full_name" />
+        </div>
 
-        <label>Date of Birth</label>
-        <input type="text" name="dob" />
-        <br />
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input class="form-control" type="text" name="dob" />
+        </div>
 
-        <label>Student Email</label>
-        <input type="text" name="email" />
-        <br />
-
-        <label>Home Phone</label>
-        <input type="text" name="home_phone" />
-        <br />
+        <div class="form-group">
+            <label>Student Email</label>
+            <input class="form-control" type="text" name="email" />
+        </div>
+        
+        <div class="form-group">
+            <label>Home Phone</label>
+            <input class="form-control" type="text" name="home_phone" />
+        </div>
 
         <input type="submit" value="Add Student" />
     </form>
