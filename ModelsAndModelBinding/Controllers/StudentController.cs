@@ -30,7 +30,7 @@ namespace ModelsAndModelBinding.Controllers
 
             // Add to database
 
-            ViewData["Added"] = true;
+            ViewData["Added"] = stu.FullName + " was added with an ID of 1";
 
             return View();
         }

@@ -3,7 +3,7 @@
     ViewData["Title"] = "Add new Student";
 }
 
-@*If the information has not been added yet, the user will see the form*@ 
+@*If information has not been added yet, the user will see the form*@ 
 @if (ViewData["Added"] == null)
 {
     <h1>Add new Student</h1>
@@ -32,5 +32,7 @@
 }
 else
 {
-<p>Added Successfully</p>
+<div class="alert alert-success">
+    @ViewData["Added"]
+</div>
 }
