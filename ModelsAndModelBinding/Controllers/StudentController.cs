@@ -46,7 +46,8 @@ namespace ModelsAndModelBinding.Controllers
         {
             if (ModelState.IsValid) // True if all validation in model passes
             {
-
+                ViewData["Message"] = $"{s.FullName} was added";
+                // Add to database...
             }
             return View();
         }
