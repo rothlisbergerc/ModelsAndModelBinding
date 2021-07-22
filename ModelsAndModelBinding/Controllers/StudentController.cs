@@ -42,7 +42,7 @@ namespace ModelsAndModelBinding.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddWithBinding()
+        public IActionResult AddWithBinding(Student s)
         {
             return View();
         }
