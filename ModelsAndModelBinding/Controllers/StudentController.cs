@@ -44,6 +44,10 @@ namespace ModelsAndModelBinding.Controllers
         [HttpPost]
         public IActionResult AddWithBinding(Student s)
         {
+            if (ModelState.IsValid) // True if all validation in model passes
+            {
+
+            }
             return View();
         }
     }

@@ -20,6 +20,7 @@ namespace ModelsAndModelBinding.Models
         /// The legal first and last name of the student
         /// </summary>
        [Display(Name="Full Name")]
+       [Required(ErrorMessage ="You must enter your full name")]
         public string FullName { get; set; }
 
         /// <summary>
@@ -34,12 +35,15 @@ namespace ModelsAndModelBinding.Models
         /// </summary>
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        [Required]
         public string EmailAddress { get; set; }
 
         /// <summary>
         /// Home phone number
         /// </summary>
         [Display(Name = "Home Phone")]
+        [Required]
         public string PhoneNumber { get; set; }
 
     }
