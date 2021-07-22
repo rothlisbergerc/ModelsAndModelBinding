@@ -35,6 +35,13 @@ namespace ModelsAndModelBinding.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult AddWithBinding()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult AddWithBinding()
         {
             return View();
